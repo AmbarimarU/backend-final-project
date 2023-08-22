@@ -12,7 +12,8 @@ CREATE TABLE products(
     description TEXT NOT NULL,
     rating NUMERIC NOT NULL,
     CHECK (rating >= 0 AND rating <= 5),
-    is_favorite BOOLEAN DEFAULT false 
+    is_favorite BOOLEAN DEFAULT false,
+    in_stock BOOLEAN DEFAULT true
 );
 
 -- DROP TABLE If EXISTS reviews;
